@@ -12,7 +12,7 @@ def replace_function():
     for f in os.listdir():
         
         z = os.path.splitext(f)
-        if z[1] == entry_ext.get():
+        if z[1] == entry_ext.get() and z[1]!='':
             global count
             count+=1
         
